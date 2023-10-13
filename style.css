@@ -25,8 +25,15 @@ body {
 #profile-card {
     display: grid;
     height: 100vh;
+    margin: 0 auto;
     place-content: center;
     position: relative;
+}
+
+.profile-banner img {
+    height: 100%;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
 }
 
 .profile-pic img {
@@ -34,7 +41,7 @@ body {
     border: 5px solid var(--white);
     position: absolute;
     right: 135px;
-    bottom: 440px;
+    bottom: 438px;
 }
 
 .profile-user, .profile-stats {
