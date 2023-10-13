@@ -13,6 +13,7 @@
 
     --white: hsl(0, 0%, 100%);
     --dark-gray: hsl(0, 0%, 59%);
+    --dark-gray-border: hsl(0, 0%, 91%);
 }
 
 body {
@@ -29,6 +30,19 @@ body {
 
 .profile-user, .profile-stats {
     background-color: var(--white);
+}
+
+.profile-user {
+    text-align: center;
+    padding: 6.4rem 0 3.2rem;
+    border-bottom: 1px solid var(--dark-gray-border);
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
 }
 
 .profile-stats {
