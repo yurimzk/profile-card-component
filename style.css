@@ -26,6 +26,15 @@ body {
     display: grid;
     height: 100vh;
     place-content: center;
+    position: relative;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    position: absolute;
+    right: 135px;
+    bottom: 440px;
 }
 
 .profile-user, .profile-stats {
@@ -34,7 +43,7 @@ body {
 
 .profile-user {
     text-align: center;
-    padding: 6.4rem 0 3.2rem;
+    padding: 7.2rem 0 3.2rem;
     border-bottom: 1px solid var(--dark-gray-border);
 }
 
