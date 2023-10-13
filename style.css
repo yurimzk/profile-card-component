@@ -11,10 +11,57 @@
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
 
+    --white: hsl(0, 0%, 100%);
     --dark-gray: hsl(0, 0%, 59%);
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.8rem;
+    background-color: var(--dark-cyan);
+}
+
+#profile-card {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+.profile-user, .profile-stats {
+    background-color: var(--white);
+}
+
+.profile-stats {
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.4rem;
+}
+
+.followers-stats, .likes-stats, .photos-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.followers-stats,
+.likes-stats,
+.photos-stats {
+    letter-spacing: .1rem;
+}
+
+.followers-stats :nth-child(1),
+.likes-stats :nth-child(1),
+.photos-stats :nth-child(1) {
+    font-weight: 700;
+}
+
+.followers-stats :nth-child(2),
+.likes-stats :nth-child(2),
+.photos-stats :nth-child(2) {
+    color: var(--dark-grayish-blue);
+    font-size: 1.2rem;
 }
