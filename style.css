@@ -120,11 +120,27 @@ body {
 .bg-top {
     top: -480px;
     left: -170px;
-    background: url("./images/bg-pattern-top.svg") no-repeat right;
+    background: url("./images/bg-pattern-top.svg") no-repeat;
 }
 
 .bg-bottom {
     bottom: -374px;
     right: -190px;
-    background: url("./images/bg-pattern-bottom.svg") no-repeat left;
+    background: url("./images/bg-pattern-bottom.svg") no-repeat;
+}
+
+@media (min-width: 1440px) {
+    .bg-top {
+        top: -385px;
+        left: -340px;
+    }
+
+    .bg-bottom {
+        bottom: -460px;
+        right: -715px;
+    }
+
+    .profile-pic img {
+        right: 670px;
+    }
 }
